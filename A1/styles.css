@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container{
+    border: 2px solid blue;
+    width: 400px;
+    padding: 50px;
+    padding-top: 10px;
+}
+
+#heading{
+    color: blue;
+    margin-left: -30px;
+    font-family: sans-serif
+}
+
+.input-field{
+    margin-bottom: 20px;
+}
