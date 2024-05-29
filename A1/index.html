@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>A1</title>
+    <script src="process_cargo.js" type="text/javascript"></script>
+    <title>A1 Sheham</title>
 
 </head>
 <body>
 
     <div id="form-container">
         <h2 id="heading">CNA RAIL SYSTEM</h2>
+        
         <label for="box-car-id-input">Box Car ID: </label>
         <input type="text" id="box-car-id-input" class="input-field" value="BX500" readonly>
         <br>
@@ -33,11 +35,43 @@
         <label for="cargo-weight-input">Cargo Weight: </label>
         <input type="text" id="cargo-weight-input" class="input-field">
         <br>
-        <button>Process Cargo</button>
-        <button>Reset Form</button>
+        <button onclick="processCargo()">Process Cargo</button>
+        <button onclick="resetForm()">Reset Form</button>
+        
+        <br><br>
 
+        <h3 id="manifest-heading"></h3>
+    
+        <table id="manifest-table" class="hidden">
+            <tr>
+                <th>Transport ID</th>
+                <th>Description</th>
+                <th>Cargo Weight</th>
+            <!-- </tr>
+            <tr>
+                <td>XXXXXXX</td>
+                <td>XXXXXXX</td>
+                <td>XXXXXXX</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+            </tr>
+            <tr>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+            </tr> -->
+            
+        </table>
 
-
+        <p id="total-weight-text"></p>
 
     </div>
     

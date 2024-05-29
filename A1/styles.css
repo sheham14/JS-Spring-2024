@@ -20,3 +20,15 @@ body{
 .input-field{
     margin-bottom: 20px;
 }
+
+.hidden{
+    display:none
+}
+
+td{
+    margin: 20px
+}
+
+tr{
+    margin: 20px
+}
